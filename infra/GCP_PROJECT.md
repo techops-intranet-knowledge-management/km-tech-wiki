@@ -11,7 +11,7 @@ https://cloud.google.com/sdk/docs/install-sdk
 Make sure you are logged in on your terminal:
 
 ```
-gloud auth login
+gcloud auth login
 ```
 
 
