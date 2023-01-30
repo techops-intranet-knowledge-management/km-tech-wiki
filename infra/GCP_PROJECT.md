@@ -47,7 +47,7 @@ gcloud iam roles copy --source-project=intranetlumapps --source="infra.terraform
 
 4.2. Create a new Service Account with name `terraform` and apply the new Role you just created `Infra Terraform` ([Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts))
 
-4.3. Generate a new key for the Terraform Service Account and save it on Secret Manager - you will need this variable for CircleCI usage (`$[ENV]_GCLOUD_SERVICE_KEY_TERRAFORM`)
+4.3. Generate a new key for the Terraform Service Account and save it on Secret Manager - you will need this variable for CircleCI usage (`$[ENV]_GCLOUD_SERVICE_KEY_TERRAFORM`), where `[ENV]` should be replaced by `DEVELOPMENT`,`STAGING`or `PRODUCTION`
 
 #### 5. GCP Editor Role and Account permission
 
