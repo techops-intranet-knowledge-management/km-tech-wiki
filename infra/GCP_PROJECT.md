@@ -32,6 +32,7 @@ To be able to run terraform (with basic Cloud Run applications) and deploy throu
    - Service Usage API (a credential required warning message may appear, ignore it)
    - Identity and Access Management (IAM) API
    - Cloud Resource Manager API
+   - Compute Engine API
    - Secret Manager API
    - Artifact Registry API
 
