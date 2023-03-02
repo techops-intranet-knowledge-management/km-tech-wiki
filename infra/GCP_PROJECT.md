@@ -57,7 +57,7 @@ gcloud iam roles copy --source-project=intranetlumapps --source="infra.terraform
 gcloud iam roles copy --source-project=intranetlumapps --source="gcp.editor" --destination="gcp.editor" --dest-project=[your-new-project-id]
 ```
 
-5.2. Create a new Service Account with name `new-domain-editor` and apply the new Role you just created `GCP Editor` ([Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts))
+5.2. Create a new Service Account with name `[domain-name]-editor` and apply the new Role you just created `GCP Editor` ([Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts))
 
 5.3. Generate a new key for the Editor Service Account and save it on Secret Manager - you will need this variable for CircleCI usage (`$[ENV]_GCLOUD_SERVICE_KEY_EDITOR`)
 
